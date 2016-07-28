@@ -1,5 +1,5 @@
 {
     "site_name": "py-azure-web-app",
     "site_type": ["socket", "WSGI"],
-    "log_file_path": "D:\home\LogFiles\python.log"
+    "log_file_path": "D:\\home\\LogFiles\\python.log"
 }
