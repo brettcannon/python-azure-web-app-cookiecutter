@@ -4,9 +4,6 @@
 [Azure Web Apps](https://azure.microsoft.com/en-us/services/app-service/web/).
 
 ## TODO
-- `web.config` for async
-  + Argument to python.exe
-  + Environment variable name for the port
 - `web.config` for WSGI
   + WSGI handler name
 - Post-deployment `pip`

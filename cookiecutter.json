@@ -1,5 +1,7 @@
 {
     "site_name": "py-azure-web-app",
     "site_type": ["socket", "WSGI"],
+    "socket_port_env_var": "PORT",
+    "socket_python_arguments": "D:\\home\\site\\wwwroot\\runserver.py --port %HTTP_PLATFORM_PORT%",
     "log_file_path": "D:\\home\\LogFiles\\python.log"
 }
