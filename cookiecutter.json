@@ -1,8 +1,11 @@
 {
     "site_name": "py-azure-web-app",
     "site_type": ["socket", "WSGI"],
-    "socket_port_env_var": "PORT",
-    "socket_python_arguments": "D:\\home\\site\\wwwroot\\runserver.py --port %HTTP_PLATFORM_PORT%",
-    "wsgi_app_object": "app.wsgi_app",
+    "socket_port_env_var":
+        "{% if cookiecutter.site_type == 'socket' %}PORT{% else %}N/A{% endif %}",
+    "socket_python_arguments":
+        "{% if cookiecutter.site_type == 'socket' %}D:\\home\\site\\wwwroot\\runserver.py --port %HTTP_PLATFORM_PORT%{% else %}N/A{% endif %}",
+    "wsgi_app_object":
+        "{% if cookiecutter.site_type == 'WSGI' %}app.wsgi_app{% else %}N/A{% endif %}",
     "log_file_path": "D:\\home\\LogFiles\\python.log"
 }
