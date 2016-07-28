@@ -4,8 +4,6 @@
 [Azure Web Apps](https://azure.microsoft.com/en-us/services/app-service/web/).
 
 ## TODO
-- `web.config` for WSGI
-  + WSGI handler name
 - Post-deployment `pip`
   + Requirements file path
 - ARM template

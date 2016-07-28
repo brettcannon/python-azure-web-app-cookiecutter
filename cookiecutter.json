@@ -3,5 +3,6 @@
     "site_type": ["socket", "WSGI"],
     "socket_port_env_var": "PORT",
     "socket_python_arguments": "D:\\home\\site\\wwwroot\\runserver.py --port %HTTP_PLATFORM_PORT%",
+    "wsgi_app_object": "app.wsgi_app",
     "log_file_path": "D:\\home\\LogFiles\\python.log"
 }
