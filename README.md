@@ -6,3 +6,7 @@
 ## TODO
 - ARM template
   + [Python version](http://www.siteextensions.net/profiles/steve.dower)
+- Default app templates?
+  + Just enough to explain how to structure the startup script
+  + Will require adding a template item for naming the startup script
+- README w/ https://deploy.azure.com button?
