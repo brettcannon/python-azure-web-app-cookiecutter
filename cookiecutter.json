@@ -6,7 +6,7 @@
     "socket_port_env_var":
         "{% if cookiecutter.site_type == 'socket' %}PORT{% else %}N/A{% endif %}",
     "socket_python_arguments":
-        "{% if cookiecutter.site_type == 'socket' %}D:\\home\\site\\wwwroot\\runserver.py --port %HTTP_PLATFORM_PORT%{% else %}N/A{% endif %}",
+        "{% if cookiecutter.site_type == 'socket' %}-m app --port %HTTP_PLATFORM_PORT%{% else %}N/A{% endif %}",
     "wsgi_app_object":
         "{% if cookiecutter.site_type == 'WSGI' %}app.wsgi_app{% else %}N/A{% endif %}",
     "requirements_filename": "requirements.txt",

@@ -90,3 +90,4 @@ ENV/
 .ropeproject
 
 testapp
+py-azure-web-app
