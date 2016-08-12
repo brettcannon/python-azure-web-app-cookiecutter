@@ -1,0 +1,4 @@
+This file prevents Kudu/Web Apps from trying to be too clever when
+deploying Python code. See
+https://azure.microsoft.com/en-us/documentation/articles/web-sites-python-configure/#customize-git-deployment
+for details.
