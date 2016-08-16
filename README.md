@@ -21,4 +21,10 @@
 - Default app templates?
   + Just enough to explain how to structure the startup script
   + Will require adding a template item for naming the startup script
-- README w/ https://deploy.azure.com button?
+- README
+  + https://deploy.azure.com button?
+  + Instructions on how to deploy site from the CLI
+- Any way to make it easier to set up the deployment source?
+  + Might be too varied to provide template support for
+  + But is only step that requires using the Azure Portal to finish
+    setup
