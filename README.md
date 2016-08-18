@@ -46,8 +46,8 @@
   + Will require adding a template item for naming the startup script
 - README.md
   + https://deploy.azure.com button?
-  + Instructions on how to deploy site from the CLI
-  + Explanation of files
+  + Instructions on how to deploy site from the CLI (both ARM and code)
+  + Explanation of every file included in the skeleton
 - Any way to make it easier to set up the deployment source?
   + Might be too varied to provide template support for
   + But is only step that requires using the Azure Portal to finish
