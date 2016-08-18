@@ -9,6 +9,7 @@
         "{% if cookiecutter.site_type == 'socket' %}-m app --port %HTTP_PLATFORM_PORT%{% else %}N/A{% endif %}",
     "wsgi_app_object":
         "{% if cookiecutter.site_type == 'WSGI' %}app.wsgi_app{% else %}N/A{% endif %}",
-    "requirements_filename": "requirements.txt",
-    "log_file_path": "D:\\home\\LogFiles\\python.log"
+    "log_file_path": "D:\\home\\LogFiles\\python.log",
+    "post_deployment_scripts_directory": "post-deployment",
+    "requirements_filename": "requirements.txt"
 }

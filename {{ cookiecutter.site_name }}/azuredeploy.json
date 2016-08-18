@@ -61,7 +61,7 @@
             "[resourceId('Microsoft.Web/Sites/config', variables('siteName'), 'logs')]"
           ],
           "properties": {
-              "SCM_POST_DEPLOYMENT_ACTIONS_PATH": "D:\\home\\site\\wwwroot\\post-deployment"
+              "SCM_POST_DEPLOYMENT_ACTIONS_PATH": "D:\\home\\site\\wwwroot\\{ cookiecutter.post_deployment_scripts_directory }}"
           }
         }
       ]
