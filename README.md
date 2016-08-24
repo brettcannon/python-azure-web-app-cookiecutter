@@ -42,7 +42,6 @@
 
 ## TODO
 
-- Validate Web App name is acceptable
 - Default app templates?
   + Just enough to explain how to structure the startup script
   + Will require adding a template item for naming the startup script
