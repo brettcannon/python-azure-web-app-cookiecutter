@@ -19,6 +19,7 @@
   site with an address of `my-site.azurewebsites.net`
 - `python_version`: which version of Python to use
 - `cpu_arch`: 32-bit or 64-bit Python?
+- `main_module`: The name of the Python module that contains the server code
 - `site_type`: choose whether you are creating a socket- or
   [WSGI](https://docs.python.org/3/library/wsgiref.html#module-wsgiref)-based
   server
@@ -42,9 +43,6 @@
 
 ## TODO
 
-- Default app templates?
-  + Just enough to explain how to structure the startup script
-  + Will require adding a template item for naming the startup script
 - README.md
   + https://deploy.azure.com button?
   + Instructions on how to deploy site from the CLI (both ARM and code)
