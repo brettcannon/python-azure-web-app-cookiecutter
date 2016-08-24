@@ -4,14 +4,8 @@
 [Python](https://www.python.org/) site running on
 [Azure Web Apps](https://azure.microsoft.com/en-us/services/app-service/web/).
 
-
-## How to use
-
-1. `cookiecutter gh:brettcannon/python-azure-web-app-cookiecutter`
-2. Add your site's code to the generated skeleton
-3. [Deploy the ARM template](https://azure.microsoft.com/en-us/documentation/articles/resource-group-template-deploy/)
-   in `azuredeploy.json` to create and minimally configure your site
-4. [Deploy your site's code](https://azure.microsoft.com/en-us/documentation/articles/app-service-deployment-readme/)
+Instructions on how to deploy your site after generating your skeleton
+are in the included `README.md` file for your site.
 
 ### Cookiecutter items
 
@@ -43,10 +37,6 @@
 
 ## TODO
 
-- README.md
-  + https://deploy.azure.com button?
-  + Instructions on how to deploy site from the CLI (both ARM and code)
-  + Explanation of every file included in the skeleton
 - Switch to PS from pip execution script
 - Any way to make it easier to set up the deployment source?
   + Might be too varied to provide template support for
