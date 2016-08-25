@@ -15,12 +15,13 @@ skeleton for a [Python](https://www.python.org/) website, created from
 - `README.md`: this file
 - `web.config`: IIS configuration file to set up the server front-end
 - `{{ cookiecutter.requirements_filename }}`: your
-  [`pip` requirements file](https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format)
+  [pip requirements file](https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format)
 - `{{ cookiecutter.main_module }}.py`: example server code
 - `{{ cookiecutter.post_deployment_scripts_directory }}`: directory
   which contains
   [scripts that are executed after every site deployment](https://github.com/projectkudu/kudu/wiki/Post-Deployment-Action-Hooks)
-  + `install-requirements.cmd`: script to run `pip`
+  + `install-requirements.ps1`: script to run the equivalent of
+    `python -m pip install -r {{ cookiecutter.requirements_filename}}`
 
 
 ## Deploying
