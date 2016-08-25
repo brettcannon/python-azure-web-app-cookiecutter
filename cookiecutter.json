@@ -2,6 +2,9 @@
     "site_name": "py-azure-web-app",
     "python_version": ["3.5.2", "2.7.12"],
     "cpu_arch": ["x64", "x86"],
+    "post_deployment_scripts_directory": "post-deployment",
+    "requirements_filename": "requirements.txt",
+    "log_file_path": "D:\\home\\LogFiles\\python.log",
     "main_module": "webapp",
     "site_type": ["socket", "WSGI"],
     "socket_port_env_var":
@@ -9,8 +12,5 @@
     "socket_python_arguments":
         "{% if cookiecutter.site_type == 'socket' %}-m {{ cookiecutter.main_module }} --port %HTTP_PLATFORM_PORT%{% else %}N/A{% endif %}",
     "wsgi_app_object":
-        "{% if cookiecutter.site_type == 'WSGI' %}{{ cookiecutter.main_module }}.wsgi_app{% else %}N/A{% endif %}",
-    "log_file_path": "D:\\home\\LogFiles\\python.log",
-    "post_deployment_scripts_directory": "post-deployment",
-    "requirements_filename": "requirements.txt"
+        "{% if cookiecutter.site_type == 'WSGI' %}{{ cookiecutter.main_module }}.wsgi_app{% else %}N/A{% endif %}"
 }
