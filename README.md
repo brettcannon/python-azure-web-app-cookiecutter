@@ -33,12 +33,3 @@ are in the included `README.md` file for your site.
   deployment
 - `requirements_filename`: the name of the `pip` requirements file,
   e.g. `requirements.txt`
-
-
-## TODO
-
-- Switch to PS from pip execution script
-- Any way to make it easier to set up the deployment source?
-  + Might be too varied to provide template support for
-  + But is only step that requires using the Azure Portal to finish
-    setup
