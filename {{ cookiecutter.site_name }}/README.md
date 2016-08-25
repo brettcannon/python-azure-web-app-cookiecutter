@@ -8,8 +8,8 @@ skeleton for a [Python](https://www.python.org/) website, created from
 
 ## Skeleton contents
 
-- `.skipPythonDeployment`: turn off some Azure Web App "magic" that is
-  unnecessary when using this skeleton
+- `.skipPythonDeployment`: turn off some implicit Azure Web App Python
+  support that is unnecessary when using this skeleton
 - `azuredeploy.json`:
   [ARM template](https://azure.microsoft.com/en-us/documentation/articles/app-service-deployment-readme/)
 - `README.md`: this file
