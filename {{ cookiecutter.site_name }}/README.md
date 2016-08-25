@@ -18,8 +18,8 @@ skeleton for a [Python](https://www.python.org/) website, created from
   [`pip` requirements file](https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format)
 - `{{ cookiecutter.main_module }}.py`: example server code
 - `{{ cookiecutter.post_deployment_scripts_directory }}`: directory
-  which contains scripts that are automatically executed after every
-  site deployment
+  which contains
+  [scripts that are executed after every site deployment](https://github.com/projectkudu/kudu/wiki/Post-Deployment-Action-Hooks)
   + `install-requirements.cmd`: script to run `pip`
 
 
