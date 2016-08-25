@@ -20,7 +20,7 @@ class PythonVersionHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    server_address = "127.0.0.1", os.environ.get("PORT", 5555)
+    server_address = "127.0.0.1", int(os.environ.get("PORT", 5555))
     server = HTTPServer(server_address, PythonVersionHandler)
     server.serve_forever()
 
