@@ -27,6 +27,8 @@ A [Cookiecutter](http://cookiecutter.readthedocs.io/) template for a
   deployment
 - `requirements_filename`: the name of the `pip` requirements file,
   e.g. `requirements.txt`
+- `static_assets_directory`: the name of the directory to place your
+  static assets so IIS can serve the files directly
 - `log_file_path`: where to store logs relating to the execution of
   the Python interpreter
 - `main_module`: The name of the Python module that contains the

@@ -22,6 +22,10 @@ skeleton for a [Python](https://www.python.org/) website, created from
   [scripts that are executed after every site deployment](https://github.com/projectkudu/kudu/wiki/Post-Deployment-Action-Hooks)
   + `install-requirements.ps1`: script to run the equivalent of
     `python -m pip install -r {{ cookiecutter.requirements_filename}}`
+- `{{ cookiecutter.static_assets_directory }}`: directory to place
+  static assets in so they can be served directly by IIS
+  + `web.config`: configuration file to make the containing directory
+    serve files via IIS directly
 
 
 ## Deploying

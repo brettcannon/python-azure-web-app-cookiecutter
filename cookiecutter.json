@@ -4,6 +4,7 @@
     "cpu_arch": ["x64", "x86"],
     "post_deployment_scripts_directory": "post-deployment",
     "requirements_filename": "requirements.txt",
+    "static_assets_directory": "static",
     "log_file_path": "D:\\home\\LogFiles\\python.log",
     "main_module": "webapp",
     "site_type": ["socket", "WSGI"],
