@@ -14,14 +14,14 @@ skeleton for a [Python](https://www.python.org/) website, created from
   [ARM template](https://azure.microsoft.com/en-us/documentation/articles/app-service-deployment-readme/)
 - `README.md`: this file
 - `web.config`: IIS configuration file to set up the server front-end
-- `{{ cookiecutter.requirements_file_path }}`: your
+- `{{ cookiecutter.requirements_file_name }}`: your
   [pip requirements file](https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format)
 - `{{ cookiecutter.main_module }}.py`: example server code
 - `{{ cookiecutter.post_deployment_scripts_directory }}`: directory
   which contains
   [scripts that are executed after every site deployment](https://github.com/projectkudu/kudu/wiki/Post-Deployment-Action-Hooks)
   + `install-requirements.ps1`: script to run the equivalent of
-    `python -m pip install -r {{ cookiecutter.requirements_file_path}}`
+    `python -m pip install -r {{ cookiecutter.requirements_file_name}}`
 - `{{ cookiecutter.static_assets_directory }}`: directory to place
   static assets in so they can be served directly by IIS
   + `web.config`: configuration file to make the containing directory

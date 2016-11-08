@@ -3,7 +3,7 @@
     "python_version": ["3.5.2", "2.7.12"],
     "cpu_arch": ["x64", "x86"],
     "post_deployment_scripts_directory": "post-deployment",
-    "requirements_file_path": "requirements.txt",
+    "requirements_file_name": "requirements.txt",
     "static_assets_directory": "static",
     "log_file_path": "D:\\home\\LogFiles\\python.log",
     "main_module": "webapp",
@@ -13,5 +13,68 @@
     "socket_python_arguments":
         "{% if cookiecutter.site_type == 'socket' %}-m {{ cookiecutter.main_module }} --port %HTTP_PLATFORM_PORT%{% else %}N/A{% endif %}",
     "wsgi_app_object":
-        "{% if cookiecutter.site_type == 'WSGI' %}{{ cookiecutter.main_module }}.wsgi_app{% else %}N/A{% endif %}"
+        "{% if cookiecutter.site_type == 'WSGI' %}{{ cookiecutter.main_module }}.wsgi_app{% else %}N/A{% endif %}",
+
+    "_visual_studio": {
+        "site_name": {
+            "label": "Site name",
+            "description": "E.g. <site-name>.azurewebsites.net (can only contain alphanumeric characters and `-`)",
+            "selector": "string"
+        },
+        "python_version": {
+            "label": "Python version",
+            "description": "The version of Python to run the site on",
+            "selector": "list"
+        },
+        "cpu_arch": {
+            "label": "CPU architecture",
+            "description": "64-bit or 32-bit version of Python",
+            "selector": "list"
+        },
+        "post_deployment_scripts_directory": {
+            "label": "Post-deployment scripts directory",
+            "description": "Relative path to the directory containing scripts that will be executed after every deployment",
+            "selector": "string"
+        },
+        "requirements_file_name": {
+            "label": "Requirements file path",
+            "description": "File name of pip's requirements file",
+            "selector": "string"
+        },
+        "static_assets_directory": {
+            "label": "Static assets directory",
+            "description": "Relative path to the directory containing static files that IIS will serve directly",
+            "selector": "string"
+        },
+        "log_file_path": {
+            "label": "Log file path",
+            "description": "Absolute file path to where the log file will be written",
+            "selector": "string"
+        },
+        "main_module": {
+            "label": "Main module",
+            "description": "Name of the module used to start execution of the site, e.g. `python -m <main module>`",
+            "selector": "string"
+        },
+        "site_type": {
+            "label": "Site type",
+            "description": "Choose `socket` if you want access to the server's listening socket, `WSGI` for a WSGI-based site",
+            "selector": "list"
+        },
+        "socket_port_env_var": {
+            "label": "Port environment variable",
+            "description": "Name to give the environment variable which will store the listening port number (socket-based sites only)",
+            "selector": "string"
+        },
+        "socket_python_arguments": {
+            "label": "CLI arguments to Python",
+            "description": "`python <CLI arguments>`, e.g. `-m main_module` (socket-based sites only)",
+            "selector": "string"
+        },
+        "wsgi_app_object": {
+            "label": "WSGI app object",
+            "description": "E.g. the function `main_module.wsgi_app` (WSGI-based sites only)",
+            "selector": "string"
+        }
+    }
 }

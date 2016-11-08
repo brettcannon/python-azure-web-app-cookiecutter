@@ -25,7 +25,7 @@ A [Cookiecutter](http://cookiecutter.readthedocs.io/) template for a
   [post-deployment action hooks](https://github.com/projectkudu/kudu/wiki/Post-Deployment-Action-Hooks)
   are to be stored, e.g. the script to execute `pip` after each site
   deployment
-- `requirements_file_path`: the path to the `pip` requirements file,
+- `requirements_file_name`: the path to the `pip` requirements file,
   e.g. `requirements.txt`
 - `static_assets_directory`: the name of the directory to place your
   static assets so IIS can serve the files directly
