@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brettcannon/python-azure-web-app-cookiecutter.svg?branch=master)](https://travis-ci.org/brettcannon/python-azure-web-app-cookiecutter)
+
 # python-azure-web-app-cookiecutter
 
 A [Cookiecutter](http://cookiecutter.readthedocs.io/) template for a
