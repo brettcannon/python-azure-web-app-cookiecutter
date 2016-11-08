@@ -3,7 +3,7 @@
     "python_version": ["3.5.2", "2.7.12"],
     "cpu_arch": ["x64", "x86"],
     "post_deployment_scripts_directory": "post-deployment",
-    "requirements_filename": "requirements.txt",
+    "requirements_file_path": "requirements.txt",
     "static_assets_directory": "static",
     "log_file_path": "D:\\home\\LogFiles\\python.log",
     "main_module": "webapp",
