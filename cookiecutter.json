@@ -15,6 +15,8 @@
     "wsgi_app_object":
         "{% if cookiecutter.site_type == 'WSGI' %}{{ cookiecutter.main_module }}.wsgi_app{% else %}N/A{% endif %}",
 
+    "_python_dir": "D:\\home\\Python{{ cookiecutter.python_version|replace('.', '')|truncate(2, end='') }}",
+
     "_visual_studio": {
         "site_name": {
             "label": "Site name",
