@@ -1,7 +1,7 @@
 language: python
 cache: pip
-version:
+python:
   - "3.5"
 
 install: "pip install -U pytest"
-script: python -m pytest
+script: pytest
