@@ -91,3 +91,4 @@ ENV/
 
 testapp
 py-azure-web-app
+.vscode
